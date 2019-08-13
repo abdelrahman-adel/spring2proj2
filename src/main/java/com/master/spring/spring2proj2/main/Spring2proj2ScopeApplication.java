@@ -11,12 +11,12 @@ import com.master.spring.spring2proj2.scope.PersonDAO;
 
 @ComponentScan(basePackages = { "com.master.spring.spring2proj1.scope" })
 @SpringBootApplication
-public class Spring2proj1ScopeApplication {
+public class Spring2proj2ScopeApplication {
 
-	private static Logger LOGGER = LoggerFactory.getLogger(Spring2proj1ScopeApplication.class);
+	private static Logger LOGGER = LoggerFactory.getLogger(Spring2proj2ScopeApplication.class);
 
 	public static void main(String[] args) {
-		ApplicationContext applicationContext = SpringApplication.run(Spring2proj1ScopeApplication.class, args);
+		ApplicationContext applicationContext = SpringApplication.run(Spring2proj2ScopeApplication.class, args);
 
 		PersonDAO personDao1 = applicationContext.getBean(PersonDAO.class);
 		PersonDAO personDao2 = applicationContext.getBean(PersonDAO.class);
